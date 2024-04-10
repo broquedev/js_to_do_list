@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Icones Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Script -->
+    <script src="script.js" defer></script>
+    <title>Todo list</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h1 class="title">JS Todo List</h1>
+        
+        <form id="input" class="input-form">
+            <input type="text" class="input-form__task" id="input-text" placeholder="Digite sua tarefa">
+            <button type="submit" class="btn">adicionar</button>
+        </form>           
+        
+        <div class="search-itens">                            
+            <select id="filters" class="filter-tasks">
+                <option value="all">Total</option>
+                <option value="todo">Pendentes</option>
+                <option value="done">Concluídas</option>
+            </select>
+            <form id="search" class="search-tasks">
+                <input type="text" id="form-search__input" class="search-tasks__input" placeholder="Pesquisar">                
+            </form>
+        </div>
+
+        <div id="status" class="status-itens">
+        </div>
+    
+        <div class="results">
+            <ul id="list" class="list-task">
+            </ul>
+        </div>  
+    </div>
+        
+</body>
+</html>
